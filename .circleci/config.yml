@@ -8,7 +8,7 @@ jobs:
     general:
       branches:
         only:
-          - my-work # list of branches to build
+          - my-workgit checkout -b my-work # list of branches to build
     steps:
       - checkout
       - run:
@@ -21,7 +21,6 @@ jobs:
 
             # Wait for MySQL to start
             sleep 5
-
       - run:
           name: Install flyway
           command: |
